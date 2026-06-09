@@ -36,9 +36,9 @@ $$\text{E-}T\text{（CMB温度・v4.0）}: \quad T_{\rm CMB} = T_P \cdot \left[(
 
 ---
 
-## 付録B：$S^9$ の球面調和縮重度の導出公式
+## 付録B： $S^9$ の球面調和縮重度の導出公式
 
-$S^9 \subset \mathbb{R}^{10}$（埋め込み空間次元 $n=10$）における $\ell$ 次球面調和の縮重度：
+$S^9 \subset \mathbb{R}^{10}$ （埋め込み空間次元 $n=10$ ）における $\ell$ 次球面調和の縮重度：
 
 $$D_\ell(S^9) = \binom{9+\ell}{\ell} - \binom{7+\ell}{\ell-2}, \quad \ell \ge 2$$
 
@@ -46,19 +46,19 @@ $$D_0 = 1, \quad D_1 = 10$$
 
 ---
 
-## 付録C：$\mathrm{so}(10)$ チャンネル位相定理の数値確認
+## 付録C： $\mathrm{so}(10)$ チャンネル位相定理の数値確認
 
-$\text{so}(10)$ の生成子 $L_{ij}$（$1 \le i < j \le 10$）全45個に対して：
+$\text{so}(10)$ の生成子 $L_{ij}$ （ $1 \le i < j \le 10$ ）全45個に対して：
 
 $$\exp(2\pi \cdot L_{ij}) = I_{10\times 10}$$
 
-Python/numpyによる数値計算で全45個 True を確認（行列指数関数のTaylor展開、収束判定 $\|e^{2\pi L} - I\| < 10^{-12}$）。
+Python/numpyによる数値計算で全45個 True を確認（行列指数関数のTaylor展開、収束判定 $\|e^{2\pi L} - I\| < 10^{-12}$ ）。
 
 ---
 
 ## 付録D：全ピーク式 v2.0 の代数的証明の詳細
 
-定理： $n_{\rm obs}=3$, $n^\ast=11$ のとき
+定理： $n_{\rm obs}=3$ , $n^\ast=11$ のとき
 
 $$\ell_k = 220 + (k-1) \times 303 \quad (k = 1, 2, 3, \ldots)$$
 

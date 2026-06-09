@@ -20,19 +20,19 @@ $$\boxed{\Lambda = 2(n^\ast-2) \cdot \frac{(n^\ast)^{-\alpha}}{l_P^2}}$$
 
 係数 $2(n^\ast-2)$ は基本方程式の連続する整数点での差分から代数的必然として導かれる。
 
-定義：$\Delta(n) := (n-1)(n-2)\pi$（方程式★の右辺の次元 $n$ への依存性）とおく。
+定義： $\Delta(n) := (n-1)(n-2)\pi$ （方程式★の右辺の次元 $n$ への依存性）とおく。
 
 $$\Delta(n^\ast) - \Delta(n^\ast-1) = \left[(n^\ast-1)(n^\ast-2) - (n^\ast-2)(n^\ast-3)\right]\pi$$
 
 $$= (n^\ast-2)\left[(n^\ast-1)-(n^\ast-3)\right]\pi = 2(n^\ast-2)\pi$$
 
-数値：$\Delta(11) - \Delta(10) = [90 - 72]\pi = 18\pi = 2 \times 9 \times \pi$ ✓
+数値： $\Delta(11) - \Delta(10) = [90 - 72]\pi = 18\pi = 2 \times 9 \times \pi$ ✓
 
-この差分 $2(n^\ast-2)\pi$ は $\text{so}(n^\ast-1)$ のカルタン分解 $\text{so}(10) = \text{so}(9) \oplus \mathfrak{m}$ における接空間方向 $\mathfrak{m}$（コセット方向、個数 $n^\ast-2 = 9$）の全位相 $9 \times 2\pi$ と一致する。これは $S^{n^\ast-1} = SO(n^\ast)/SO(n^\ast-1)$ の等質空間構造における自然な分解である。
+この差分 $2(n^\ast-2)\pi$ は $\text{so}(n^\ast-1)$ のカルタン分解 $\text{so}(10) = \text{so}(9) \oplus \mathfrak{m}$ における接空間方向 $\mathfrak{m}$ （コセット方向、個数 $n^\ast-2 = 9$ ）の全位相 $9 \times 2\pi$ と一致する。これは $S^{n^\ast-1} = SO(n^\ast)/SO(n^\ast-1)$ の等質空間構造における自然な分解である。
 
 物理的意味： $\Lambda$ は次元が $n^\ast-1$ から $n^\ast$ に到達する最終ステップで基本方程式に付け加わる位相に対応するエネルギーである。
 
-#### 独立検証：$\alpha$ の二経路一致
+#### 独立検証： $\alpha$ の二経路一致
 
 $n^\ast = 11$ と $\Lambda$ の観測値から独立に逆算した $\alpha_\Lambda = 117.920$ は、基本方程式から得られる $\alpha_\star = 117.913$ と $0.006\%$ の精度で一致する（[§6.1](03_fundamental_equation.md#61-基本方程式) 参照）。これは $\Lambda$ の計算が独立した予測であることを示す。
 
