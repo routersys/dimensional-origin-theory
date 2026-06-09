@@ -1,0 +1,61 @@
+# §7：宇宙論的定数の導出と120桁問題の解消
+
+← [§6：基本方程式](03_fundamental_equation.md) | 次 → [§8：CMBピーク構造](05_cmb_peaks.md)
+
+---
+
+## 7. 宇宙論的定数の導出
+
+### 7.1 真空エネルギー密度
+
+一次元起源の真空エネルギー密度（プランク単位）：
+
+$$\varepsilon(n^\ast) = E_0 \cdot (n^\ast)^{-\alpha}$$
+
+### 7.2 宇宙論的定数の式
+
+$$\boxed{\Lambda = 2(n^\ast-2) \cdot \frac{(n^\ast)^{-\alpha}}{l_P^2}}$$
+
+### 7.3 係数 $2(n^\ast-2)$ の代数的導出
+
+係数 $2(n^\ast-2)$ は基本方程式の連続する整数点での差分から代数的必然として導かれる。
+
+定義：$\Delta(n) := (n-1)(n-2)\pi$（方程式★の右辺の次元 $n$ への依存性）とおく。
+
+$$\Delta(n^\ast) - \Delta(n^\ast-1) = \left[(n^\ast-1)(n^\ast-2) - (n^\ast-2)(n^\ast-3)\right]\pi$$
+
+$$= (n^\ast-2)\left[(n^\ast-1)-(n^\ast-3)\right]\pi = 2(n^\ast-2)\pi$$
+
+数値：$\Delta(11) - \Delta(10) = [90 - 72]\pi = 18\pi = 2 \times 9 \times \pi$ ✓
+
+この差分 $2(n^\ast-2)\pi$ は $\text{so}(n^\ast-1)$ のカルタン分解 $\text{so}(10) = \text{so}(9) \oplus \mathfrak{m}$ における接空間方向 $\mathfrak{m}$（コセット方向、個数 $n^\ast-2 = 9$）の全位相 $9 \times 2\pi$ と一致する。これは $S^{n^\ast-1} = SO(n^\ast)/SO(n^\ast-1)$ の等質空間構造における自然な分解である。
+
+物理的意味： $\Lambda$ は次元が $n^\ast-1$ から $n^\ast$ に到達する最終ステップで基本方程式に付け加わる位相に対応するエネルギーである。
+
+#### 独立検証：$\alpha$ の二経路一致
+
+$n^\ast = 11$ と $\Lambda$ の観測値から独立に逆算した $\alpha_\Lambda = 117.920$ は、基本方程式から得られる $\alpha_\star = 117.913$ と $0.006\%$ の精度で一致する（[§6.1](03_fundamental_equation.md#61-基本方程式) 参照）。これは $\Lambda$ の計算が独立した予測であることを示す。
+
+### 7.4 数値検証
+
+$$\Lambda_{\rm theory}
+= \frac{18 \times 11^{-117.913}}{(1.616255 \times 10^{-35})^2}
+= 1.1076 \times 10^{-52} \;\text{m}^{-2}$$
+
+$$\Lambda_{\rm obs} = 1.089 \times 10^{-52} \;\text{m}^{-2}$$
+
+誤差：1.71%
+
+### 7.5 120桁問題の解消
+
+量子場理論による真空エネルギーの推定値は $\Lambda_{\rm QFT} \sim l_P^{-2} \sim 10^{70}\;\text{m}^{-2}$ であり、観測値との比は $\sim 10^{122}$ に達する。
+
+本理論では：
+
+$$\Lambda \sim (n^\ast)^{-\alpha} / l_P^2 \sim 11^{-117.9} / l_P^2$$
+
+指数 $\alpha \approx 117.9$ が自然に $10^{-122}$ の抑制を与える。外部パラメータの調整なしに、120桁の乖離が解消される。
+
+---
+
+← [§6：基本方程式](03_fundamental_equation.md) | 次 → [§8：CMBピーク構造](05_cmb_peaks.md)
