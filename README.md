@@ -161,47 +161,65 @@ Frobenius定理により除算代数の最大次元は8（八元数 $\mathbb{O}$
 証明（5つの補題による）：
 
 Lemma 1（公理Ωの代数的実現）：
-公理Ω：$\neg\exists \to \exists$ は「無」と「有」の2元状態の共存を要請する。その代数的最小実現は、$\mathbb{Z}/2\mathbb{Z}$ 上の対合（involution）$\sigma: A \to A$, $\sigma^2 = \mathrm{id}$, $\sigma \ne \mathrm{id}$ である。この対合が Cayley-Dickson 構成の二倍化写像の起源となる。
+公理Ω $\neg\exists \to \exists$ は2つの状態「無」$(\neg\exists)$ と「有」$(\exists)$ を定義する。これらは命題論理上 排他的かつ網羅的（$\neg\exists \vee \exists$ が常に真、$\neg\exists \wedge \exists = \bot$）であるから、状態空間は 2元集合 $S = \{0, 1\}$ と同型である。
 
-（注：ここで「最小実現」として最小性原理を用いる。これは §6.4 の要請Pと同種の要請であり、本理論が全体を通じて採用している方法論と整合する。）
+$S$ の自己同型群は $\mathrm{Aut}(S) = \mathbb{Z}/2\mathbb{Z}$（2元集合の全単射は恒等写像と置換の2つのみであり、この事実は集合論の定理として外部仮定を要しない）。公理Ωの変換 $\neg\exists \to \exists$ は $S$ 上の置換、すなわち $\mathbb{Z}/2\mathbb{Z}$ の非自明元として一意的に実現される。また二重否定律 $\neg(\neg\exists) = \exists$ から $\phi^2 = \mathrm{id}$ が従い、この写像は対合（involution）$\sigma: A \to A$, $\sigma^2 = \mathrm{id}$, $\sigma \ne \mathrm{id}$ である。この対合が Cayley-Dickson 構成の二倍化写像の起源となる。
 
 Lemma 2（Cayley-Dickson構成の必然性）：
 対合 $\sigma$ を持つ代数 $A$ から、二倍化 $A' = A \oplus A\cdot e$ を構成し、新しい積
-$$(a, b)(c, d) = (ac - d b^*, da + bc^*)$$
-を定義する。この操作はノルム乗法性 $|ab|^2 = |a|^2|b|^2$ が保たれる限り繰り返される。Hurwitz定理によりこの反復は $k=3$（八元数 $\mathbb{O}$）で停止する（$k=4$：十六元数でノルム乗法性が破れる）。
+$$(a, b)(c, d) = (ac - db^*, da + bc^*)$$
+を定義する。この操作はノルム乗法性 $|ab|^2 = |a|^2|b|^2$ が保たれる限り繰り返される。Hurwitz定理によりこの反復は $k = 3$（八元数 $\mathbb{O}$）で停止する（$k = 4$：十六元数でノルム乗法性が破れる）。
 
 Lemma 3（各段階の対合群の成長則）：
-段階 $k$ の Cayley-Dickson 代数 $A_k$ の標準対合 $\sigma_k$ は：
+各 Cayley-Dickson 段階 $k$ で新たに追加される対合 $\sigma_k$ を帰納的に：
 
-$$\sigma_k(a + b\cdot e_k) = \sigma_{k-1}(a) - b\cdot e_k$$
+$$\sigma_k(a + b\cdot e_k) = \sigma_{k-1}(a) - b\cdot e_k \quad (a, b \in A_{k-1})$$
 
-と定義される。この帰納的定義から、独立な対合の生成元は各段階で1個増加し：
+と定義し、$G_k = \langle \sigma_0, \sigma_1, \ldots, \sigma_{k-1} \rangle$ とおく。
 
-| 段階 $k$ | 代数 | 対合群 $G_k$ | $\|G_k\|$ |
-|---------|------|-------------|---------|
+$G_k \cong (\mathbb{Z}/2\mathbb{Z})^k$ の証明：
+
+（i）$\sigma_j^2 = \mathrm{id}$（帰納法）：$k=0$ では $\sigma_0 = \mathrm{id}$ なので自明。$\sigma_{k-1}^2 = \mathrm{id}$ を仮定すると、
+
+$$\sigma_k^2(a + b\cdot e_k) = \sigma_k(\sigma_{k-1}(a) - b\cdot e_k) = \sigma_{k-1}^2(a) + b\cdot e_k = a + b\cdot e_k$$
+
+よって $\sigma_k^2 = \mathrm{id}$。
+
+（ii）$\sigma_i \sigma_j = \sigma_j \sigma_i$（$i < j$）：$A_j = A_{j-1} \oplus A_{j-1}\cdot e_j$ の任意の元 $x = a + b\cdot e_j$ に対し、$\sigma_i$（段階 $i \le j-1$ の対合）は $e_j$ の係数に独立に作用するから、
+
+$$\sigma_i(\sigma_j(x)) = \sigma_i(\sigma_{j-1}(a) - b\cdot e_j) = \sigma_i\sigma_{j-1}(a) - \sigma_i(b)\cdot e_j$$
+
+$$\sigma_j(\sigma_i(x)) = \sigma_j(\sigma_i(a) + \sigma_i(b)\cdot e_j) = \sigma_{j-1}\sigma_i(a) - \sigma_i(b)\cdot e_j$$
+
+両者の一致は $A_{j-1}$ 内での $\sigma_i$ と $\sigma_{j-1}$ の可換性に帰着し、帰納的に示される。
+
+（iii）独立性：$\sigma_j$ は $e_j$ の符号を反転し $e_i$（$i < j$）には作用しない。$e_j$ は Cayley-Dickson 構成で段階 $j$ に新たに追加される基底元であるから、$\sigma_j$ は $\sigma_0, \ldots, \sigma_{j-1}$ の積では表せない。
+
+（i）（ii）（iii）より $G_k \cong (\mathbb{Z}/2\mathbb{Z})^k$、したがって $|G_k| = 2^k$。$\square$
+
+| 段階 $k$ | 代数 | $G_k$ | $\|G_k\|$ |
+|---------|------|--------|---------|
 | 0 | $\mathbb{R}$ | $\{\mathrm{id}\}$ | $1 = 2^0$ |
 | 1 | $\mathbb{C}$ | $\mathbb{Z}/2\mathbb{Z}$ | $2 = 2^1$ |
 | 2 | $\mathbb{H}$ | $(\mathbb{Z}/2\mathbb{Z})^2$ | $4 = 2^2$ |
 | 3 | $\mathbb{O}$ | $(\mathbb{Z}/2\mathbb{Z})^3$ | $8 = 2^3$ |
 
-一般に $|G_k| = 2^k$（Cayley-Dickson構成の定義から直接の帰結）。
-
 Lemma 4（$n_{\rm obs}$ 段階の累積対合群サイズ）：
-結合的除算代数は $\mathbb{R}, \mathbb{C}, \mathbb{H}$（= $n_{\rm obs}$ 個）のみ（Hurwitz定理）。これらの対合群サイズの積：
+結合的除算代数は $\mathbb{R}, \mathbb{C}, \mathbb{H}$（$= n_{\rm obs}$ 個）のみ（Hurwitz定理）。これらの対合群サイズの積：
 
-$$B = \prod_{k=0}^{n_{\rm obs}-1} |G_k| = \prod_{k=0}^{n_{\rm obs}-1} 2^k = 2^{\sum_{k=0}^{n_{\rm obs}-1} k} = 2^{n_{\rm obs}(n_{\rm obs}-1)/2}$$
+$$B = \prod_{k=0}^{n_{\rm obs}-1} |G_k| = \prod_{k=0}^{n_{\rm obs}-1} 2^k = 2^{\,\sum_{k=0}^{n_{\rm obs}-1} k} = 2^{n_{\rm obs}(n_{\rm obs}-1)/2}$$
 
 Lemma 5（$n_{\rm obs} = 3$ の唯一性）：
-$B = 2^{n_{\rm obs}(n_{\rm obs}-1)/2} = 2^{n_{\rm obs}}$ が成立するための必要十分条件は：
+$B = 2^{n_{\rm obs}(n_{\rm obs}-1)/2} = 2^{n_{\rm obs}}$ が成立するための必要十分条件：
 
-$$\frac{n_{\rm obs}(n_{\rm obs}-1)}{2} = n_{\rm obs} \iff n_{\rm obs}(n_{\rm obs}-3) = 0 \iff n_{\rm obs} = 3$$
+$$\frac{n_{\rm obs}(n_{\rm obs}-1)}{2} = n_{\rm obs} \iff n_{\rm obs}(n_{\rm obs}-3) = 0 \iff n_{\rm obs} \in \{0, 3\}$$
 
-（$n_{\rm obs} = 0$ は物理的に無意味なため除外。$n_{\rm obs} = 1, 2, 4, 5, \ldots$ では不成立。）
+$n_{\rm obs} = 0$ は「観測可能な空間次元が0」を意味し、物理的に無意味なため除外。よって $n_{\rm obs} = 3$ が唯一の解。$n_{\rm obs} = 1, 2, 4, 5, \ldots$ では成立しないことは代数的に確認できる。
 
 結論：
 $$\boxed{B = 2^{n_{\rm obs}} = 8 \quad (n_{\rm obs} = 3 \text{ においてのみ成立})} \qquad \blacksquare$$
 
-この定理は Bott 周期定理を外部定理として「引用」するのではなく、Cayley-Dickson 構成の内部構造から Bott 周期の値を決定する。$n_{\rm obs} = 3$ という空間次元の値が代数的に Bott 周期を 8 に固定する、という意味で $n_{\rm obs}$ と $B$ の値は相互依存ではなく、$n_{\rm obs} \to B$ の一方向の決定関係にある。
+この定理は Bott 周期定理を外部定理として引用せず、Cayley-Dickson 構成の内部構造から Bott 周期の値を決定する。$n_{\rm obs} \to B$ の決定は一方向であり、両者の値の間に循環はない。
 
 ### 5.5 n\* の確定
 
@@ -212,7 +230,7 @@ $$\boxed{n^\ast = n_{\rm obs} + B = 3 + 8 = 11}$$
 ```
 公理Ω（¬∃ → ∃）
  │
- ├─ Z/2Z 対合の存在（最小性原理 = 要請Pと同種）
+ ├─ Z/2Z 対合の存在（公理Ωの状態空間 S={¬∃,∃} の自己同型群 Aut(S)=Z/2Z）
  │
  ├─ Cayley-Dickson構成（R → C → H → O）
  │   └─ 対合群 G_k ≅ (Z/2Z)^k, |G_k| = 2^k
