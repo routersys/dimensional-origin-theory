@@ -91,8 +91,8 @@ The errors of all six first-principles peaks fall in the narrow band $0.47$–$0
 | $\Omega_{\Lambda} \approx 0.690$ | Derived | $\rho_{\Lambda}/\rho_{\rm crit}$ (error $0.77\%$) |
 | $\Omega_{b}h^{2} \approx 0.02156$ | Derived | $R_{\rm dec} \cdot z_{\rm dec} \cdot \Omega_{\gamma}h^{2}$ (error $3.6\%$, $T_{\rm CMB}$ input) |
 | $T_{\rm CMB} \approx 2.7285\,{\rm K}$ | Derived | See §11.5 (error $0.11\%$) |
-| $g^{\ast}_{\rm reh} = (n^{\ast}-1)^{2} = 100$ | Proved | Total $S^{2}$ spherical-harmonic mode count $= $ square of the multiplicative-group order of $\mathbb{F}_{11}^{\ast}$ |
-| $g^{\ast}_{s,{\rm today}} = (4n^{\ast}-1)/n^{\ast} = 43/11$ | Proved | Dual role of $n^{\ast} = 11$: internally derived as function of $n_{\rm obs}$ alone by Theorem 11.5.1 |
+| $g_{\rm reh}^{\ast} = (n^{\ast}-1)^{2} = 100$ | Proved | Total $S^{2}$ spherical-harmonic mode count $= $ square of the multiplicative-group order of $\mathbb{F}_{11}^{\ast}$ |
+| $g_{s,{\rm \1}}^{\ast} = (4n^{\ast}-1)/n^{\ast} = 43/11$ | Proved | Dual role of $n^{\ast} = 11$: internally derived as function of $n_{\rm obs}$ alone by Theorem 11.5.1 |
 | Agreement of thermodynamic and geometric $n^{\ast}$ ($n_{\rm obs} = 3$ unique) | Proved | Theorem 11.5.1: three theorems (gauge freedom, spinor dimension, $\eta/\zeta$ ratio) + monotonicity |
 | Deduction of Postulate O1 | Proved | Deduced from $\mathrm{Aut}(S)$ group axioms (Theorem 4.1.0) |
 | Deduction of Postulate O2 | Proved | Deduced from $P = R(\pi) \in SO(2)$ (2-d parity collapse) (Theorem 4.1.1) |
@@ -160,7 +160,7 @@ $$\frac{T_{\nu}}{T_{\gamma}} = \left(\frac{4}{n^{\ast}}\right)^{1/3} = \left(\fr
 
 The algebraic origin of Role 2 is as follows. In entropy conservation before and after $e^{+}e^{-}$ annihilation,
 
-$$g^{\ast}_{s}(\gamma + e^{+}e^{-}) = 2 + \frac{7}{8}\times 4 = \frac{4+7}{2} = \frac{n^{\ast}}{2}$$
+$$g_{s}^{\ast}(\gamma + e^{+}e^{-}) = 2 + \frac{7}{8}\times 4 = \frac{4+7}{2} = \frac{n^{\ast}}{2}$$
 
 The numerator $n^{\ast} = 11 = 4 + 7$ is algebraically determined as the sum of the statistical degrees of freedom of photons ($2 \times 2 = 4$) and the fermionic statistical weight ($7$), coinciding with the $n^{\ast} = 11$ that the present theory derives independently from Axiom Ω.
 
@@ -182,15 +182,15 @@ $$\frac{\eta(n_{\rm obs}+1)}{\zeta(n_{\rm obs}+1)} = 1 - 2^{-n_{\rm obs}}$$
 
 **Definition:** the entropic effective degrees of freedom just before $e^{+}e^{-}$ annihilation is defined using only internal quantities as
 
-$$g^{\ast}_{s} = \underbrace{(n_{\rm obs}-1)}_{\text{(i)}} + \underbrace{\left(1 - 2^{-n_{\rm obs}}\right)}_{\text{(iii)}} \cdot \underbrace{2^{(n_{\rm obs}+1)/2}}_{\text{(ii)}}$$
+$$g_{s}^{\ast} = \underbrace{(n_{\rm obs}-1)}_{\text{(i)}} + \underbrace{\left(1 - 2^{-n_{\rm obs}}\right)}_{\text{(iii)}} \cdot \underbrace{2^{(n_{\rm obs}+1)/2}}_{\text{(ii)}}$$
 
-The thermodynamic observational-limit dimension is $n^{\ast}_{\rm th} := 2\,g^{\ast}_{s}$, and the geometric observational-limit dimension is $n^{\ast}_{\rm geom} := n_{\rm obs} + 2^{n_{\rm obs}}$ (§5).
+The thermodynamic observational-limit dimension is $n_{\rm th}^{\ast} := 2\,g_{s}^{\ast}$, and the geometric observational-limit dimension is $n_{\rm geom}^{\ast} := n_{\rm obs} + 2^{n_{\rm obs}}$ (§5).
 
-**Theorem:** $n^{\ast}_{\rm th} = n^{\ast}_{\rm geom}$ holds if and only if $n_{\rm obs} = 3$, and the common value is $11$.
+**Theorem:** $n_{\rm th}^{\ast} = n_{\rm geom}^{\ast}$ holds if and only if $n_{\rm obs} = 3$, and the common value is $11$.
 
-**Proof:** For $n_{\rm obs} = 3$: $n^{\ast}_{\rm th} = 2[2 + \tfrac{7}{8}\cdot 4] = 11 = 3 + 8 = n^{\ast}_{\rm geom}$ (sufficiency). Uniqueness: for $n \geq 4$,
+**Proof:** For $n_{\rm obs} = 3$: $n_{\rm th}^{\ast} = 2[2 + \tfrac{7}{8}\cdot 4] = 11 = 3 + 8 = n_{\rm geom}^{\ast}$ (sufficiency). Uniqueness: for $n \geq 4$,
 
-$$n^{\ast}_{\rm geom} - n^{\ast}_{\rm th} = 2^{n} - 2^{\lfloor(n+1)/2\rfloor+1}\left(1-2^{-n}\right) + n - 2(n-1)$$
+$$n_{\rm geom}^{\ast} - n_{\rm th}^{\ast} = 2^{n} - 2^{\lfloor(n+1)/2\rfloor+1}\left(1-2^{-n}\right) + n - 2(n-1)$$
 
 and since $n - \lfloor(n+1)/2\rfloor - 1 \geq 1$ for $n \geq 4$, we have $2^{n} \geq 2 \cdot 2^{\lfloor(n+1)/2\rfloor+1}$, so the difference is positive and monotonically increasing in $n$ (numerically confirmed: $6.5$ at $n = 4$, $32243$ at $n = 15$). For $n = 1, 2$ direct computation gives disagreement ($2 \neq 3$, $5 \neq 6$). Hence agreement holds only for $n_{\rm obs} = 3$. $\square$
 
@@ -202,9 +202,9 @@ and since $n - \lfloor(n+1)/2\rfloor - 1 \geq 1$ for $n \geq 4$, we have $2^{n} 
 
 Theorem: let $k$ be the number of minimal Dirac species that annihilate, and generalise:
 
-$$n^{\ast}_{\rm th}(n_{\rm obs}, k) = 2\left[(n_{\rm obs}-1) + \left(1-2^{-n_{\rm obs}}\right) k\, 2^{(n_{\rm obs}+1)/2}\right]$$
+$$n_{\rm th}^{\ast}(n_{\rm obs}, k) = 2\left[(n_{\rm obs}-1) + \left(1-2^{-n_{\rm obs}}\right) k\, 2^{(n_{\rm obs}+1)/2}\right]$$
 
-The only integer solution of $n^{\ast}_{\rm th}(n_{\rm obs}, k) = n^{\ast}_{\rm geom}(n_{\rm obs}) = n_{\rm obs} + 2^{n_{\rm obs}}$ is $(n_{\rm obs}, k) = (3, 1)$.
+The only integer solution of $n_{\rm th}^{\ast}(n_{\rm obs}, k) = n_{\rm geom}^{\ast}(n_{\rm obs}) = n_{\rm obs} + 2^{n_{\rm obs}}$ is $(n_{\rm obs}, k) = (3, 1)$.
 
 **Proof:** For $n_{\rm obs} = 3$, the condition becomes $4 + 7k = 11$, giving the unique solution $k = 1$ ($k = 2$ gives $18$, $k = 3$ gives $25$). A full scan of the lattice $1 \leq n_{\rm obs} \leq 15$, $1 \leq k \leq 10$ using exact rational arithmetic confirmed that the only solution is $(3, 1)$. For $n_{\rm obs} \geq 4$, the growth of $2^{n_{\rm obs}}$ dominates the fermionic term $k \cdot 2^{(n_{\rm obs}+1)/2}$ for any fixed $k$, so no solution exists for large $n_{\rm obs}$ either. $\square$
 
@@ -218,17 +218,17 @@ The $\mathrm{so}(n^{\ast}-1) = \mathrm{so}(10)$ constituting the fundamental equ
 
 The effective degrees of freedom at reheating are
 
-$$g^{\ast}_{\rm reh} = (n^{\ast} - 1)^{2} = 100$$
+$$g_{\rm reh}^{\ast} = (n^{\ast} - 1)^{2} = 100$$
 
 This is the total number of $S^{2}$ spherical-harmonic modes,
 
 $$\sum_{\ell=0}^{n^{\ast}-2}(2\ell+1) = (n^{\ast}-1)^{2}$$
 
-and also coincides with the square of the order of the multiplicative group of the finite field $\mathbb{F}\_{11}$: $|\mathbb{F}_{11}^{\ast}|^{2} = 10^{2}$.
+and also coincides with the square of the order of the multiplicative group of the finite field $\mathbb{F}_{11}$: $|\mathbb{F}_{11}^{\ast}|^{2} = 10^{2}$.
 
 The current entropic effective degrees of freedom are
 
-$$g^{\ast}_{s,{\rm today}} = 2 + \frac{7}{8}\times 6 \times \frac{4}{n^{\ast}} = \frac{4n^{\ast} - 1}{n^{\ast}} = \frac{43}{11}$$
+$$g_{s,{\rm \1}}^{\ast} = 2 + \frac{7}{8}\times 6 \times \frac{4}{n^{\ast}} = \frac{4n^{\ast} - 1}{n^{\ast}} = \frac{43}{11}$$
 
 The appearance of $n^{\ast} = 11$ in the denominator is a consequence of $T_{\nu}/T_{\gamma} = (4/n^{\ast})^{1/3}$, not a coincidence.
 
@@ -248,18 +248,18 @@ Proof status of each factor:
 |--------|-------|-------------|
 | $e^{-90\pi} = (n^{\ast})^{-\alpha}$ | $\alpha = 90\pi/\ln 11$ | Rigorously proved |
 | $2/(n_{\rm obs}\,\pi)$: odd-parity selection | $2/\pi \times 1/n_{\rm obs}$ | Fully proved |
-| $g^{\ast}_{\rm reh} = (n^{\ast}-1)^{2} = 100$ | Spherical-harmonic mode count | Algebraically derived |
-| $g^{\ast}_{s,{\rm today}} = (4n^{\ast}-1)/n^{\ast} = 43/11$ | Dual role of $n^{\ast}$ | Established |
+| $g_{\rm reh}^{\ast} = (n^{\ast}-1)^{2} = 100$ | Spherical-harmonic mode count | Algebraically derived |
+| $g_{s,{\rm \1}}^{\ast} = (4n^{\ast}-1)/n^{\ast} = 43/11$ | Dual role of $n^{\ast}$ | Established |
 
-#### Supplement: Difference Between $g^{\ast}_{\rm reh}$ and the Standard Model
+#### Supplement: Difference Between $g_{\rm reh}^{\ast}$ and the Standard Model
 
-The difference from the Standard Model high-temperature effective degrees of freedom $g^{\ast}_{\rm SM} = 106.75$ is
+The difference from the Standard Model high-temperature effective degrees of freedom $g_{\rm SM}^{\ast} = 106.75$ is
 
-$$\Delta g = g^{\ast}_{\rm SM} - g^{\ast}_{\rm reh} = 106.75 - 100 = \frac{27}{4} = \frac{n_{\rm obs}^{3}}{4}$$
+$$\Delta g = g_{\rm SM}^{\ast} - g_{\rm reh}^{\ast} = 106.75 - 100 = \frac{27}{4} = \frac{n_{\rm obs}^{3}}{4}$$
 
 $n_{\rm obs}^{3} = 27$ corresponds to the volumetric degrees of freedom of 3-dimensional space, and $4 = 2^{2}$ to the square of the minimal spin basis count.
 
-$\Delta g$ is a falsifiable prediction already adjudicated by data. Since $T_{\rm CMB} \propto (g^{\ast}_{\rm reh})^{-1/4}$, if the effective degrees of freedom at reheating were the Standard Model high-temperature value $106.75$, then $T_{\rm CMB} = 2.7285 \times (100/106.75)^{1/4} = 2.6843\,{\rm K}$ (error $1.51\%$). Data favour $100$ over $106.75$ by a factor of 14 in precision. The present theory thus predicts that the degrees of freedom thermalised at reheating are 100, not 106.75, and this prediction is consistent with current data.
+$\Delta g$ is a falsifiable prediction already adjudicated by data. Since $T_{\rm CMB} \propto (g_{\rm reh}^{\ast})^{-1/4}$, if the effective degrees of freedom at reheating were the Standard Model high-temperature value $106.75$, then $T_{\rm CMB} = 2.7285 \times (100/106.75)^{1/4} = 2.6843\,{\rm K}$ (error $1.51\%$). Data favour $100$ over $106.75$ by a factor of 14 in precision. The present theory thus predicts that the degrees of freedom thermalised at reheating are 100, not 106.75, and this prediction is consistent with current data.
 
 #### Identification of $\Delta g$ and Conversion to $T_{\rm reh}$
 
@@ -271,7 +271,7 @@ The breakdown of the deficit $27/4 = 6.75$ at this temperature is
 
 $$\Delta g = \underbrace{4.81}_{t} + \underbrace{0.99}_{W} + \underbrace{0.61}_{Z} + \underbrace{0.33}_{H} = 6.750$$
 
-Hence $27/4$ is the semi-relativistic suppression of the four heavy Standard Model particles at the electroweak scale $T \approx 64$ GeV, and $g^{\ast}_{\rm reh} = (n^{\ast}-1)^{2} = 100$ converts to the reheating-temperature prediction
+Hence $27/4$ is the semi-relativistic suppression of the four heavy Standard Model particles at the electroweak scale $T \approx 64$ GeV, and $g_{\rm reh}^{\ast} = (n^{\ast}-1)^{2} = 100$ converts to the reheating-temperature prediction
 
 $$T_{\rm reh} = 63.6\ {\rm GeV} \quad \text{(electroweak scale)}$$
 
@@ -279,7 +279,7 @@ This identification is conditional on the Standard Model mass spectrum (an empir
 
 Mass-dependence reduction theorem: the only way in which all claims of the present theory depend on the Standard Model mass spectrum is through the single combination $T(g^{\ast} = 100)$. The condition $m_{e} < T_{\nu{\rm dec}} < m_{\mu}$ is, by Theorem 11.5.3, not an input but the physical realisation of the consistency condition; the $\Delta g$ identification and $T_{\rm reh}$ depend only on the function $T(g^{\ast} = 100)$ of the mass spectrum, and all other derivations ($\Lambda$, CMB, $T_{\rm CMB}$, $n_{s}$, etc.) do not reference masses. The derivation of the Standard Model mass spectrum is therefore not required for any claim of the present theory.
 
-Transfer theorem: the unconditionality of $T_{\rm reh}$ is not an unsolved problem of the present theory but a problem on the Standard Model side. The quantity the present theory derives in this sector is the dimensionless degree-of-freedom count $g^{\ast}_{\rm reh} = (n^{\ast}-1)^{2} = 100$, which is unconditional and already verified at $0.11\%$ error through $T_{\rm CMB}$. The temperature label is given as the image $T(g^{\ast} = 100) = 63.6$ GeV under the map $g^{\ast}_{\rm SM}(T)$ (the empirical function defined by the Standard Model mass spectrum); first-principles derivation of this map is the same problem as the origin of mass in the Standard Model. The claim on the theory side ($g^{\ast}_{\rm reh} = 100$) is complete.
+Transfer theorem: the unconditionality of $T_{\rm reh}$ is not an unsolved problem of the present theory but a problem on the Standard Model side. The quantity the present theory derives in this sector is the dimensionless degree-of-freedom count $g_{\rm reh}^{\ast} = (n^{\ast}-1)^{2} = 100$, which is unconditional and already verified at $0.11\%$ error through $T_{\rm CMB}$. The temperature label is given as the image $T(g^{\ast} = 100) = 63.6$ GeV under the map $g_{\rm SM}^{\ast}(T)$ (the empirical function defined by the Standard Model mass spectrum); first-principles derivation of this map is the same problem as the origin of mass in the Standard Model. The claim on the theory side ($g_{\rm reh}^{\ast} = 100$) is complete.
 
 #### Complete Derivation Classification
 

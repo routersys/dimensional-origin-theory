@@ -310,7 +310,7 @@ The action of $SO(10)$ (the isometry group of $S^{9}$) is lifted to $\mathcal{F}
 
 Theorem: an $SO(10)$-invariant quadratic-form Hamiltonian is restricted, by applying Schur's lemma block-by-block to each irreducible block, to the form
 
-$$H = \sum_{\ell} \omega_{\ell} \sum_{m=1}^{D_{\ell}} a^{\dagger}_{\ell m}\, a_{\ell m} \qquad (\omega_{\ell} > 0)$$
+$$H = \sum_{\ell} \omega_{\ell} \sum_{m=1}^{D_{\ell}} a_{\ell m}^{\dagger}\, a_{\ell m} \qquad (\omega_{\ell} > 0)$$
 
 Hence all $D_{\ell}$ modes in the same $\ell$-block carry identical frequency, and the zero-point variance in the ground state is exactly equal (intra-block equipartition). Moreover, the modes are automatically decoupled and independence holds. $\square$
 
