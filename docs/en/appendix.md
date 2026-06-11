@@ -1,4 +1,4 @@
-# Appendices A–D
+# Appendices A–E
 
 ← [§10–§11: Numerical Verification and Completeness Assessment](07_verification_and_completeness.md) | [README (top)](README.md)
 
@@ -85,6 +85,21 @@ Step 4: Validity of the full peak formula.
 Starting from the first peak $\ell_{1} = 220$ with spacing $\Delta\ell = 303$, the sequence is arithmetic:
 
 $$\ell_{k} = \ell_{1} + (k-1)\Delta\ell = 220 + (k-1) \times 303 \qquad \blacksquare$$
+
+---
+
+## Appendix E: Numerical Confirmation of the Flag Stabiliser $U(2)$
+
+From the structure constants of the octonions (the seven cyclic triples of the Fano plane), a linear system of equations imposing the derivation condition $D(xy) = D(x)y + xD(y)$ on $7 \times 7$ matrices over $\mathrm{Im}\,\mathbb{O}$ was constructed, and the Lie algebra was built as the kernel of that system. Results from singular-value decomposition in Python/numpy are as follows.
+
+| Object | Dimension |
+|--------|-----------|
+| $\mathfrak{g}_{2}$ (kernel of derivation equations) | 14 |
+| $\mathrm{Stab}(i)$ ($D e_{1} = 0$) | 8 |
+| $\mathrm{Stab}(\mathbb{H})$ (preserves $\mathrm{span}\{e_{1}, e_{2}, e_{3}\}$) | 6 |
+| Intersection $\mathrm{Stab}(i) \cap \mathrm{Stab}(\mathbb{H})$ | 4 |
+
+The intersection is closed under the bracket; the derived subalgebra is three-dimensional and the centre is one-dimensional (both confirmed with threshold $10^{-9}$; residuals are at machine precision). The eigenvalues of the central generator on $\mathrm{Im}\,\mathbb{O}$ are $0$ (the $e_{1}$ direction), $\pm i/\sqrt{3}$ ($\mathrm{span}\{e_{2}, e_{3}\}$), and $\pm i/(2\sqrt{3})$ (each doubly degenerate, $\mathrm{span}\{e_{4}, \ldots, e_{7}\}$); the norm of the off-diagonal blocks is below $10^{-15}$. The charge ratio $2:1$ is confirmed (see [§6.10](03_fundamental_equation.md#610-derivation-of-the-electroweak-group-and-normalisation-of-hypercharge)).
 
 ---
 
