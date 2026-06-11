@@ -55,6 +55,8 @@
 | [docs/08_revision_history.md](docs/08_revision_history.md) | 改訂・監査記録：訂正・棄却・降格・再解決の経緯 |
 | [docs/appendix.md](docs/appendix.md) | 付録A〜D：方程式体系・縮重度公式・数値確認・証明詳細 |
 
+英語版は [docs/en/README.md](docs/en/README.md) から読み進めることができる。
+
 ---
 
 ## 核心となる4つの主張
