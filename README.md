@@ -57,6 +57,9 @@
 | [docs/07_verification_and_completeness.md](docs/07_verification_and_completeness.md) | §10〜§11：全数値検証表・理論の完成度評価 |
 | [docs/08_revision_history.md](docs/08_revision_history.md) | 改訂・監査記録：訂正・棄却・降格・再解決の経緯 |
 | [docs/appendix.md](docs/appendix.md) | 付録A〜E：方程式体系・縮重度公式・数値確認・証明詳細 |
+| [docs/09_formal_system.md](docs/09_formal_system.md) | §12：公理Ωの形式化・独立公理A1〜A9の在庫 |
+| [docs/10_coincidence_audit.md](docs/10_coincidence_audit.md) | §13：一致の稀少性監査（全数走査・ $\ell_1$ と $\Delta\ell$ の唯一性） |
+| [docs/11_spinor_internalization.md](docs/11_spinor_internalization.md) | §14： $\mathbf{16}$ 表現対応の内製化・同定要請R1〜R4 |
 
 英語版は [docs/en/README.md](docs/en/README.md) から読み進めることができる。
 
