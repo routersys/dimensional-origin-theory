@@ -4,7 +4,7 @@
 
 ---
 
-## 付録A：方程式体系（v3.0完全版）
+## 付録A：方程式体系
 
 $$\text{公理Ω}: \quad \neg\exists \;\rightarrow\; \exists$$
 
@@ -18,11 +18,11 @@ $$\text{E-}H\text{（ハッブル定数）}: \quad H_0 = \sqrt{\frac{8\pi G\,\rh
 
 $$\text{E-CMB（第1ピーク）}: \quad \ell_1 = D_3(S^9) + D_1(S^9) = \binom{12}{3} = 220$$
 
-$$\text{E-CMB（全ピーク・v2.0）}: \quad \ell_k = \binom{n^\ast+1}{n_{\rm obs}} + (k-1) \cdot \frac{D_{n_{\rm obs}+1}(S^{n^\ast-2}) - D_{n_{\rm obs}-1}(S^{n^\ast-2})}{2} = 220 + (k-1) \times 303$$
+$$\text{E-CMB（全ピーク）}: \quad \ell_k = \binom{n^\ast+1}{n_{\rm obs}} + (k-1) \cdot \frac{D_{n_{\rm obs}+1}(S^{n^\ast-2}) - D_{n_{\rm obs}-1}(S^{n^\ast-2})}{2} = 220 + (k-1) \times 303$$
 
-$$\text{E-}R\text{（バリオン-光子比・v3.0）}: \quad R_{\rm dec} = \frac{3(n^\ast - n_{\rm obs})}{4(n^\ast - 1)} = \frac{3}{5}$$
+$$\text{E-}R\text{（バリオン-光子比）}: \quad R_{\rm dec} = \frac{3(n^\ast - n_{\rm obs})}{4(n^\ast - 1)} = \frac{3}{5}$$
 
-$$\text{E-}z\text{（脱結合赤方偏移・v3.0）}: \quad z_{\rm dec} = \frac{n^\ast-1}{2} \cdot \binom{n^\ast+1}{n_{\rm obs}} - n^\ast = 1089$$
+$$\text{E-}z\text{（脱結合赤方偏移）}: \quad z_{\rm dec} = \frac{n^\ast-1}{2} \cdot \binom{n^\ast+1}{n_{\rm obs}} - n^\ast = 1089$$
 
 $$\text{E-}r\text{（テンソル・スカラー比）}: \quad r = \frac{1}{D_2(S^9)} = \frac{1}{54} \approx 0.0185$$
 
@@ -32,13 +32,15 @@ $$\text{E-}N_{\rm eff}\text{（有効ニュートリノ数）}: \quad N_{\rm eff
 
 $$\text{E-}n_t\text{（重力波指数）}: \quad n_t = -\frac{1}{8 D_2} = -\frac{1}{432} \approx -0.00231$$
 
-$$\text{E-}T\text{（CMB温度・v4.0）}: \quad T_{\rm CMB} = T_P \cdot \left[(n^\ast)^{-\alpha} \cdot \frac{2}{n_{\rm obs}\,\pi} \cdot \frac{30}{\pi^2(n^\ast-1)^2} \cdot \left(\frac{4n^\ast-1}{n^\ast(n^\ast-1)^2}\right)^{4/3}\right]^{1/4} \approx 2.7285\,{\rm K}$$
+$$\text{E-}n_s\text{（スカラースペクトル指数）}: \quad n_s = 1 - \frac{4}{\alpha} = 1 - \frac{4\ln 11}{90\pi} = 0.96608$$
+
+$$\text{E-}T\text{（CMB温度）}: \quad T_{\rm CMB} = T_P \cdot \left[(n^\ast)^{-\alpha} \cdot \frac{2}{n_{\rm obs}\,\pi} \cdot \frac{30}{\pi^2(n^\ast-1)^2} \cdot \left(\frac{4n^\ast-1}{n^\ast(n^\ast-1)^2}\right)^{4/3}\right]^{1/4} \approx 2.7285\,{\rm K}$$
 
 ---
 
 ## 付録B： $S^9$ の球面調和縮重度の導出公式
 
-$S^9 \subset \mathbb{R}^{10}$ （埋め込み空間次元 $n=10$ ）における $\ell$ 次球面調和の縮重度：
+$S^9 \subset \mathbb{R}^{10}$ （埋め込み空間次元 $n=10$ ）における $\ell$ 次球面調和の縮重度は次のとおりである。
 
 $$D_\ell(S^9) = \binom{9+\ell}{\ell} - \binom{7+\ell}{\ell-2}, \quad \ell \ge 2$$
 
@@ -48,15 +50,15 @@ $$D_0 = 1, \quad D_1 = 10$$
 
 ## 付録C： $\mathrm{so}(10)$ チャンネル位相定理の数値確認
 
-$\text{so}(10)$ の生成子 $L_{ij}$ （ $1 \le i < j \le 10$ ）全45個に対して：
+$\text{so}(10)$ の生成子 $L_{ij}$ （ $1 \le i < j \le 10$ ）全45個に対して次が成立する。
 
 $$\exp(2\pi \cdot L_{ij}) = I_{10\times 10}$$
 
-Python/numpyによる数値計算で全45個 True を確認（行列指数関数のTaylor展開、収束判定 $\|e^{2\pi L} - I\| < 10^{-12}$ ）。
+Python/numpyによる数値計算で全45個 True を確認した（行列指数関数のTaylor展開、収束判定 $\|e^{2\pi L} - I\| < 10^{-12}$ ）。
 
 ---
 
-## 付録D：全ピーク式 v2.0 の代数的証明の詳細
+## 付録D：全ピーク式の代数的証明の詳細
 
 定理： $n_{\rm obs}=3$ , $n^\ast=11$ のとき
 
@@ -64,7 +66,7 @@ $$\ell_k = 220 + (k-1) \times 303 \quad (k = 1, 2, 3, \ldots)$$
 
 **証明：**
 
-ステップ1： $\ell_1 = 220$ は [§8.4](../docs/05_cmb_peaks.md#84-cmb第1ピークの代数的証明) で代数的に証明済みである。
+ステップ1： $\ell_1 = 220$ は [§8.4](05_cmb_peaks.md#84-cmb第1ピークの代数的証明) で代数的に証明済みである。
 
 ステップ2： 音響スケール $\Delta\ell = 303$ の計算。
 
@@ -76,11 +78,11 @@ $$\Delta\ell = \frac{D_{n_{\rm obs}+1} - D_{n_{\rm obs}-1}}{2} = \frac{660 - 54}
 
 ステップ3： $\Delta\ell$ の音響スケールとしての同定。
 
-$S^9$ 上の偶パリティモードは静的背景場を記述し、そのモード密度の変化 $D_4 - D_2 = 606$ が「次の音響振動が起こるための空間的容量の増分」を表す。音響定在波はその進行波2方向の重ね合わせであるから、実効的な $\ell$ 空間間隔は $606/2 = 303$ となる。
+$S^9$ 上の偶パリティモードは静的背景場を記述し、そのモード密度の変化 $D_4 - D_2 = 606$ が次の音響振動が起こるための空間的容量の増分を表す。音響定在波はその進行波2方向の重ね合わせであるから、実効的な $\ell$ 空間間隔は $606/2 = 303$ となる。
 
 ステップ4： 全ピーク式の成立。
 
-第1ピーク $\ell_1 = 220$ から始まり、間隔 $\Delta\ell = 303$ で等差数列をなす：
+第1ピーク $\ell_1 = 220$ から始まり、間隔 $\Delta\ell = 303$ で等差数列をなす。
 
 $$\ell_k = \ell_1 + (k-1)\Delta\ell = 220 + (k-1) \times 303 \qquad \blacksquare$$
 
@@ -90,4 +92,4 @@ $$\ell_k = \ell_1 + (k-1)\Delta\ell = 220 + (k-1) \times 303 \qquad \blacksquare
 
 ---
 
-*本稿は独自研究の記録（v4.4）である。数値検証コードを含め、独立した検証・批判・議論を歓迎する。*
+*本稿は独自研究の記録である。数値検証コードを含め、独立した検証・批判・議論を歓迎する。*
