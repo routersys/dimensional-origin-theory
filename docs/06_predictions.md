@@ -210,9 +210,17 @@ $$\boxed{n_s = 1 - \frac{4}{\alpha} = 1 - \frac{4\ln 11}{90\pi} = 0.96608}$$
 
 Step 1（観測量の定義）： CMBで観測される原始スカラー揺らぎは曲率揺らぎ $\zeta$ であり、一様密度面の取り方により全エネルギー密度の揺らぎ $\delta\rho$ で定義される（標準宇宙論の定義）。
 
-Step 2（エネルギーの加法性）： スケール $l$ で確立している $n(l)$ 個の次元は全エネルギー密度 $\varepsilon$ を等分に担う： $\rho = \sum_{j=1}^{n(l)} \rho_j$ 、 $\langle\rho_j\rangle = \varepsilon/n$ 。等分担の根拠は補題B0の $SO(n)$ 等方性（方向への推移的作用）である。エネルギーが構成要素に対して加法的（extensive）であることは定義である。
+Step 2（エネルギーの加法性）： スケール $l$ で確立している $n(l)$ 個の次元は全エネルギー密度 $\varepsilon$ を等分に担う。
 
-Step 3（独立性）： 各次元の揺らぎ $\delta\rho_j$ は相異なる座標方向の独立振動子に対応する。この多チャンネル構造のHilbert空間はテンソル積構成 $\mathcal{H}_n = \bigotimes_{j=1}^{n} h_j$ により明示的に構成され（[改訂・監査記録 §3.3](08_revision_history.md#33-第三次検証による最終解決)）、 $SO(n)$ 不変な2次形式ハミルトニアンはSchurの補題により非結合形に強制されるため、独立性は構成内の定理である。
+$$\rho = \sum_{j=1}^{n(l)} \rho_j, \qquad \langle\rho_j\rangle = \varepsilon/n$$
+
+等分担の根拠は補題B0の $SO(n)$ 等方性（方向への推移的作用）である。エネルギーが構成要素に対して加法的（extensive）であることは定義である。
+
+Step 3（独立性）： 各次元の揺らぎ $\delta\rho_j$ は相異なる座標方向の独立振動子に対応する。この多チャンネル構造のHilbert空間はテンソル積構成
+
+$$\mathcal{H}_n = \bigotimes_{j=1}^{n} h_j$$
+
+により明示的に構成され（[改訂・監査記録 §3.3](08_revision_history.md#33-第三次検証による最終解決)）、 $SO(n)$ 不変な2次形式ハミルトニアンはSchurの補題により非結合形に強制されるため、独立性は構成内の定理である。
 
 Step 4（分散の加法性）： 独立確率変数の和の分散は分散の和に等しい（確率論の定理）。
 
@@ -292,7 +300,15 @@ $n_s$ の導出（定理9.8.2＋9.8.3）は $\delta\rho_j$ のみで閉じてお
 
 §11.10.4 の有限テンソル積構成は、可算無限自由度の場構造へ次のとおり持ち上がる。
 
-構成： 一粒子空間を $S^9$ 球面調和分解 $\mathcal{H}_1 = \overline{\bigoplus_{\ell \ge 0} V_\ell}$ （ $\dim V_\ell = D_\ell(S^9)$ 、各 $V_\ell$ は $SO(10)$ 既約）とし、場の状態空間を対称Fock空間 $\mathcal{F} = \bigoplus_{N \ge 0} \mathrm{Sym}^N \mathcal{H}_1$ とする。 $SO(10)$ （ $S^9$ の等長群）の作用は第二量子化関手により $\mathcal{F}$ へ持ち上がる。
+構成： 一粒子空間を $S^9$ 球面調和分解
+
+$$\mathcal{H}_1 = \overline{\bigoplus_{\ell \ge 0} V_\ell}, \qquad \dim V_\ell = D_\ell(S^9)$$
+
+（各 $V_\ell$ は $SO(10)$ 既約）とし、場の状態空間を対称Fock空間
+
+$$\mathcal{F} = \bigoplus_{N \ge 0} \mathrm{Sym}^N \mathcal{H}_1$$
+
+とする。 $SO(10)$ （ $S^9$ の等長群）の作用は第二量子化関手により $\mathcal{F}$ へ持ち上がる。
 
 定理： $SO(10)$ 不変な2次形式ハミルトニアンは、Schurの補題を既約ブロックごとに適用することにより次の形に限られる。
 
@@ -320,7 +336,11 @@ $$SO(10) \;\supset\; SO(3) \times SO(7) \;\supset\; SO(3) \times G_2 \;\supset\;
 
 第2段（ $SO(7) \supset G_2$ ）： 隠れ $7$ 方向に Cayley-Dickson 塔（§4〜§5）の八元数積を同定すると（同定公準G、§9.11.4）、対称性は積の自己同型群 $\mathrm{Aut}(\mathbb{O}) = G_2$ （ $\dim 14$ ）へ縮約する。 $G_2 \subset SO(7)$ は確立された事実である。
 
-第3段（ $G_2 \supset SU(3)$ ）： 複素単位 $i$ の固定。 $\mathrm{Stab}_{G_2}(i) = SU(3)$ は確立された事実（ $G_2/SU(3) = S^6$ ）。固定される $i$ は §6.8（複素Hilbert空間の必然性）が既に理論内で要求している単位そのものであり、本段は新規選択を含まない。
+第3段（ $G_2 \supset SU(3)$ ）： 複素単位 $i$ の固定。
+
+$$\mathrm{Stab}_{G_2}(i) = SU(3), \qquad G_2/SU(3) = S^6$$
+
+は確立された事実である。固定される $i$ は §6.8（複素Hilbert空間の必然性）が既に理論内で要求している単位そのものであり、本段は新規選択を含まない。
 
 分岐則の検証（確立された分岐）は次のとおりである。
 
@@ -334,7 +354,15 @@ $$\therefore\quad \mathbf{16} = (\mathbf{2},\mathbf{3}) \oplus (\mathbf{2},\bar{
 
 #### 9.11.3 電弱因子の所在と連鎖の停止点
 
-$G_2$ の階数は $2$ であり、階数 $4$ の $SU(3) \times SU(2) \times U(1)$ は $G_2$ に埋め込めない。実際、 $\mathrm{Stab}_{G_2}(\mathbb{H}) = SO(4) \cong (SU(2) \times SU(2))/\mathbb{Z}_2$ であり、CD塔の旗 $\mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$ を全て固定する部分群は $\mathrm{Stab}_{G_2}(i) \cap \mathrm{Stab}_{G_2}(\mathbb{H}) \cong U(2) \subset SU(3)$ に縮む。すなわち $\mathbb{H}$ を八元数内部の固定方向として実現すると色 $SU(3)$ 自体が $U(2)$ へ破れる。したがって本理論の構造は、CD塔の $\mathbb{H}$ を八元数内部の破れ方向としてではなく独立なスピン構造（系11.5.2、 $\mathrm{Spin}(3) \cong Sp(1)$ ）として実現する読みを強制する。電弱因子 $SU(2) \times U(1)$ の候補はCD塔の $\mathbb{H}$ （ $Sp(1) = SU(2)$ ）と $\mathbb{C}$ （ $U(1)$ ）に存在するが、 $\mathrm{so}(10)$ チャンネル内部の連鎖は $SO(3) \times SU(3)$ で停止する。両層の統合（電弱因子と $\mathrm{so}(10)$ 構造の結合）は未導出であり、本節は主張しない。
+$G_2$ の階数は $2$ であり、階数 $4$ の $SU(3) \times SU(2) \times U(1)$ は $G_2$ に埋め込めない。実際、次が成立する。
+
+$$\mathrm{Stab}_{G_2}(\mathbb{H}) = SO(4) \cong (SU(2) \times SU(2))/\mathbb{Z}_2$$
+
+CD塔の旗 $\mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$ を全て固定する部分群は次に縮む。
+
+$$\mathrm{Stab}_{G_2}(i) \cap \mathrm{Stab}_{G_2}(\mathbb{H}) \cong U(2) \subset SU(3)$$
+
+すなわち $\mathbb{H}$ を八元数内部の固定方向として実現すると色 $SU(3)$ 自体が $U(2)$ へ破れる。したがって本理論の構造は、CD塔の $\mathbb{H}$ を八元数内部の破れ方向としてではなく独立なスピン構造（系11.5.2、 $\mathrm{Spin}(3) \cong Sp(1)$ ）として実現する読みを強制する。電弱因子 $SU(2) \times U(1)$ の候補はCD塔の $\mathbb{H}$ （ $Sp(1) = SU(2)$ ）と $\mathbb{C}$ （ $U(1)$ ）に存在するが、 $\mathrm{so}(10)$ チャンネル内部の連鎖は $SO(3) \times SU(3)$ で停止する。両層の統合（電弱因子と $\mathrm{so}(10)$ 構造の結合）は未導出であり、本節は主張しない。
 
 なお Pati-Salam 型 $SO(10) \supset SO(6) \times SO(4)$ の分割 $10 = 6 + 4$ には本理論内に接地源が存在せず、 $SU(5)$ 経路の複素構造の選択にも接地源が存在しないため、いずれも採用しない。採用した連鎖は接地源を持つ唯一の経路である。
 

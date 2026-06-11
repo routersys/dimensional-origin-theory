@@ -74,7 +74,7 @@
 |------|------|------|
 | $n_{\rm obs} = 3$ | 証明済 | Hurwitz定理（Frobenius定理） |
 | $n^\ast = 11$ | 証明済 | Wall定理 $\mathrm{sBr}(\mathbb{R}) \cong \mathbb{Z}/8$ ＋次数付けの公理Ω起源（定理5.2.1） |
-| Bott周期 $B = 2^{n_{\rm obs}}$ | 証明済 | Cayley-Dickson対合群の積 $\prod_{k=0}^{n_{\rm obs}-1}2^k = 2^{n_{\rm obs}(n_{\rm obs}-1)/2} = 2^{n_{\rm obs}}$ （ $n_{\rm obs}=3$ 唯一） |
+| Bott周期 $B = 2^{n_{\rm obs}}$ | 証明済 | Cayley-Dickson対合群の積 $2^0 \cdot 2^1 \cdots 2^{n_{\rm obs}-1} = 2^{n_{\rm obs}(n_{\rm obs}-1)/2} = 2^{n_{\rm obs}}$ （ $n_{\rm obs}=3$ 唯一） |
 | $\alpha = 90\pi/\ln 11$ | 証明済 | 基本方程式（Mellin表現 + so(n*−1)） |
 | $\Lambda$ のオーダー（120桁問題解消） | 証明済 | $(n^\ast)^{-\alpha}/l_P^2$ |
 | $\Lambda$ の係数 $2(n^\ast-2)$ | 証明済 | 基本方程式の差分 $\Delta/\pi$ |
@@ -220,7 +220,11 @@ $$n^\ast_{\rm th}(n_{\rm obs}, k) = 2\left[(n_{\rm obs}-1) + \left(1-2^{-n_{\rm 
 
 $$g^\ast_{\rm reh} = (n^\ast - 1)^2 = 100$$
 
-これは $S^2$ 上の球面調和モードの総数 $\sum_{\ell=0}^{n^\ast-2}(2\ell+1) = (n^\ast-1)^2$ であり、有限体 $\mathbb{F}_{11}$ の乗法群の位数の二乗 $|\mathbb{F}_{11}^\ast|^2 = 10^2$ とも一致する。
+これは $S^2$ 上の球面調和モードの総数
+
+$$\sum_{\ell=0}^{n^\ast-2}(2\ell+1) = (n^\ast-1)^2$$
+
+であり、有限体 $\mathbb{F}_{11}$ の乗法群の位数の二乗 $|\mathbb{F}_{11}^\ast|^2 = 10^2$ とも一致する。
 
 現在のエントロピー的有効自由度は次のとおりである。
 
@@ -310,7 +314,11 @@ $$T_{\rm reh} = 63.6\ {\rm GeV} \quad \text{（電弱スケール）}$$
 
 #### 多チャンネルHilbert空間の明示構成（[改訂・監査記録 §3.3](08_revision_history.md#33-第三次検証による最終解決) の要点）
 
-構成： $\mathcal{H}_n = \bigotimes_{j=1}^{n} h_j$ 、 $h_j = L^2(\mathbb{R})$ （チャンネル $j$ の正準対 $(q_j, p_j)$ ）。 $SO(n)$ は座標 $(q_1, \ldots, q_n)$ の回転として作用する。 $SO(n)$ 不変な2次形式ハミルトニアンはSchurの補題により
+構成： チャンネルごとのHilbert空間を次のとおり積む。
+
+$$\mathcal{H}_n = \bigotimes_{j=1}^{n} h_j, \qquad h_j = L^2(\mathbb{R})$$
+
+ここで $h_j$ はチャンネル $j$ の正準対 $(q_j, p_j)$ を担う。 $SO(n)$ は座標 $(q_1, \ldots, q_n)$ の回転として作用する。 $SO(n)$ 不変な2次形式ハミルトニアンはSchurの補題により
 
 $$H = a\sum_{j=1}^{n} p_j^2 + b\sum_{j=1}^{n} q_j^2 \qquad (a, b > 0)$$
 

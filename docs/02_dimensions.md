@@ -193,7 +193,11 @@ $n_{\rm obs} = 0$ は $n \ge 1$ の公理的前提と矛盾するため排除さ
 
 $$\boxed{B = 2^{n_{\rm obs}} = 8 \quad (n_{\rm obs} = 3 \text{ においてのみ成立})} \qquad \blacksquare$$
 
-この等式 $\prod_{k=0}^{n_{\rm obs}-1} 2^k = 2^{n_{\rm obs}(n_{\rm obs}-1)/2} = 2^{n_{\rm obs}}$ は厳密に成立する代数的事実であり、 $n_{\rm obs} = 3$ でのみCayley-Dickson対合群の総位数が周期 $8$ と一致するという整合性を与える。
+この等式
+
+$$\prod_{k=0}^{n_{\rm obs}-1} 2^k = 2^{n_{\rm obs}(n_{\rm obs}-1)/2} = 2^{n_{\rm obs}}$$
+
+は厳密に成立する代数的事実であり、 $n_{\rm obs} = 3$ でのみCayley-Dickson対合群の総位数が周期 $8$ と一致するという整合性を与える。
 
 ### 5.4 $n^\ast$ の確定
 
