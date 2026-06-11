@@ -16,9 +16,9 @@ $$\varepsilon(n^{\ast}) = E_{0} \cdot (n^{\ast})^{-\alpha}$$
 
 $$\boxed{\Lambda = 2(n^{\ast}-2) \cdot \frac{(n^{\ast})^{-\alpha}}{l_{P}^{2}}}$$
 
-### 7.3 Algebraic Derivation of the Coefficient $2(n^{\ast}-2)$
+### 7.3 Algebraic Representation of the Coefficient $2(n^{\ast}-2)$
 
-The coefficient $2(n^{\ast}-2)$ is derived as an algebraic necessity from the difference between consecutive integer values of the right-hand side of the fundamental equation.
+The coefficient $2(n^{\ast}-2)$ can be expressed as the difference between consecutive integer values of the right-hand side of the fundamental equation. However, the coincidence audit (§13) confirms that this coefficient value is one of the candidates $\{17, 18\}$ within the observationally allowed window, and that $18$ admits multiple natural representations such as $2(n^{\ast}-2) = 2n_{\rm obs}^{2} = (n^{\ast}-1)+(n^{\ast}-3)$. The following difference expression is therefore not a unique derivation of the coefficient but one of several equivalent readings. The evidential force for $\Lambda$ lies not in the algebraic story of this coefficient but in the structure by which the exponent $\alpha$ provides 120-order suppression without external tuning (§7.5).
 
 Setting $\Delta(n) := (n-1)(n-2)\pi$ (the dependence of the right-hand side of the equation on dimension $n$),
 
@@ -30,7 +30,7 @@ Numerically: $\Delta(11) - \Delta(10) = [90 - 72]\pi = 18\pi = 2 \times 9 \times
 
 This difference $2(n^{\ast}-2)\pi$ coincides with the total phase $9 \times 2\pi$ of the tangent-space directions $\mathfrak{m}$ (coset directions, count $n^{\ast}-2 = 9$) in the Cartan decomposition $\mathrm{so}(10) = \mathrm{so}(9) \oplus \mathfrak{m}$ of $\mathrm{so}(n^{\ast}-1)$. This is a natural decomposition in the homogeneous-space structure of $S^{n^{\ast}-1} = SO(n^{\ast})/SO(n^{\ast}-1)$.
 
-Physical meaning: $\Lambda$ corresponds to the energy associated with the phase appended to the fundamental equation at the final step by which the dimension reaches $n^{\ast}$ from $n^{\ast}-1$.
+Physical interpretation (candidate): $\Lambda$ corresponds to the energy associated with the phase appended to the fundamental equation at the final step by which the dimension reaches $n^{\ast}$ from $n^{\ast}-1$. This interpretation is, as noted above, one of several equivalent readings.
 
 #### Independent Verification: Two-Path Agreement on $\alpha$
 
